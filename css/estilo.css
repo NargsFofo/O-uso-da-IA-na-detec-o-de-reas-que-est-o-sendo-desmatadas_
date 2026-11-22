@@ -1,0 +1,426 @@
+:root{
+--cor-60: #132442;
+--cor-30: #3551a4;
+--cor-10:#8ad6d6;
+--cor-atencao:#D6E264;
+--cor-outro:#80a1f8;
+--cor-branca:  #FFFFFF;
+}
+
+body{
+
+background-color: var(--cor-branca);
+color: var(--cor-atencao);
+font-family: "Montserrat", sans-serif;
+
+}
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+
+html{
+scroll-behavior: smooth;
+
+}
+
+
+
+h2, h3{
+color: var(--cor-30); 
+font-family: "Asimovian", sans-serif;
+
+}
+
+h1 {
+color: var(--cor-atencao); 
+font-family: "Asimovian", sans-serif;
+
+}
+
+
+
+.trabalho-cabecalho{
+background-color: var(--cor-60);
+border: 1px solid #dddddd;
+border-radius: 12px;
+padding: 25px;
+box-shadow: 0 3px 10px rgb(209, 209, 209);
+color: var(--cor-atencao)
+
+}
+
+.containerfofo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.layout-conteudo {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 35px;
+    align-items: start;
+}
+
+.topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    position: sticky;
+    top: 20px;
+    align-self: start;
+
+    padding: 20px;
+    background-color: var(--cor-60);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgb(209, 209, 209);
+}
+
+.coluna-conteudo {
+    min-width: 0;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.recursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.recursos iframe{
+width: 100%;
+aspect-ratio: 16/9;
+height: auto;
+border: none;
+border-radius: 10px;
+
+
+}
+
+.containerfofo figcaption{
+color: var(--cor-60);
+}
+
+.introducao-texto{
+
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding: 30px;
+border-radius: 12px;
+
+background-color: var(--cor-60);
+border: 1px solid #dddddd;
+margin-bottom: 35px;
+box-shadow: 0 3px 10px rgb(209, 209, 209);
+}
+
+.deteccao-texto{
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding: 30px;
+border-radius: 12px;
+
+background-color: var(--cor-60);
+border: 1px solid #dddddd;
+margin-bottom: 35px;
+box-shadow: 0 3px 10px rgb(209, 209, 209);
+}
+
+.classificacao-texto{
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding: 30px;
+border-radius: 12px;
+
+background-color: var(--cor-60);
+border: 1px solid #dddddd;
+margin-bottom: 35px;
+box-shadow: 0 3px 10px rgb(209, 209, 209);
+}
+
+.final-texto{
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding: 30px;
+border-radius: 12px;
+
+background-color: var(--cor-60);
+border: 1px solid #dddddd;
+margin-bottom: 35px;
+box-shadow: 0 3px 10px rgb(209, 209, 209);
+}
+
+.rodape{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 12px;
+padding: 25px 5%;
+background: var(--cor-60);
+font-size: 16px;
+color: var(--cor-30);
+}
+
+.rodape a:hover{
+color: var(--cor-atencao);
+
+}
+
+.topicos h3{
+margin-bottom: 10px;
+}
+
+.topicos ul{
+padding-left: 25px;
+line-height: 2;
+color: var(--cor-outro)
+}
+
+.topicos a{
+color: var(--cor-30);
+}
+
+.topicos a:hover{
+color: var(--cor-outro);
+
+}
+
+.topicos a:focus-visible{
+outline: 2px solid var(--cor-extra);
+outline-offset: 3px;
+}
+
+.fontes h3{
+margin-bottom: 10px;
+}
+
+.fontes ul{
+padding-left: 25px;
+line-height: 2;
+color: var(--cor-outro)
+}
+
+.fontes a{
+color: var(--cor-60);
+}
+
+.fontes a:hover{
+color: var(--cor-outro);
+
+}
+
+.fontes a:focus-visible{
+outline: 2px solid var(--cor-extra);
+outline-offset: 3px;
+}
+
+figure img{
+    margin-top: 30px;
+
+}
+
+
+.destaque {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+
+.imagem-destaque {
+    margin: 0;
+    min-width: 0;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+    display: block;
+}
+
+.imagem-destaque figcaption {
+    margin-top: 8px;
+    color: var(--cor-60);
+}
+
+
+.curiosidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    min-height: 300px;
+    padding: 25px;
+
+    background-color: var(--cor-60);
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgb(209, 209, 209);
+}
+
+.curiosidades h2 {
+    color: var(--cor-10);
+}
+
+.curiosidades p {
+    color: var(--cor-branca);
+    line-height: 1.7;
+}
+
+.curiosidades button {
+    padding: 12px;
+
+    background-color: var(--cor-10);
+    color: var(--cor-60);
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.curiosidades button:hover {
+    background-color: var(--cor-atencao);
+}
+
+.curiosidades button:focus-visible {
+    outline: 3px solid var(--cor-branca);
+    outline-offset: 4px;
+}
+
+.textos h2{
+border-bottom: 2px solid var(--cor-30);
+padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    
+    .containerfofo {
+        padding: 20px 15px;
+        width: 100%;
+    }
+
+   
+    .trabalho-cabecalho {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .trabalho-cabecalho h1 {
+        font-size: 28px;
+    }
+
+    .autores {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+   
+    figure img {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .layout-conteudo {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .topicos {
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .topicos h3 {
+        font-size: 25px;
+    }
+
+    .introducao-texto,
+    .deteccao-texto,
+    .classificacao-texto,
+    .final-texto {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .textos h2 {
+        font-size: 25px;
+    }
+
+    .textos p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .recursos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .recursos video {
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        font-size: 13px;
+
+       
+    .destaque {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .curiosidades {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .curiosidades h2 {
+        font-size: 1.4rem;
+    }
+
+    .curiosidades p {
+        font-size: 0.95rem;
+    }
+
+    .curiosidades button {
+        width: 100%;
+    }
+}
+    
+}

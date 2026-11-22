@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página do Site</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/javascript.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar lg:navbar-expand px-4" style="background-color: #c7c7c7;">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">Portal</a>
+
+                <button class="navbar-toggler btn btn-icon" type="button"
+                    data-bs-toggle="drawer" data-bs-target="#navbarDrawer"
+                    aria-controls="navbarDrawer" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <dialog class="lg:drawer drawer-end" id="navbarDrawer">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title">Menu</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="drawer" aria-label="Close"></button>
+                    </div>
+
+                    <div class="drawer-body">
+                        <div class="navbar-nav ms-auto gap-10 lg:gap-10">
+                            <a class="nav-link active" aria-current="page"
+                                href="#">Página Atual</a>
+
+                            <a class="nav-link" href="#">Tópico 2</a>
+
+                            <a class="nav-link" href="#">Tópico 3</a>
+                        </div>
+                    </div>
+                </dialog>
+
+            </div>
+        </nav>
+ 
+
+  <main>
+
+    
+    <article id="trabalho" class="trabalho">
+
+   
+
+      <div class="containerfofo">
+      <header class="trabalho-cabecalho">
+        <h1>O uso da IA na detecção de áreas que estão sendo desmatadas</h1>
+        <p class="autores">
+          <strong>Autores:</strong> Anna Júlia de Andrade Silva, Leticia Mariana dos Santos Gonçalves, Lisley dos Anjos Gregório<br>
+          <strong>Participante do portal:</strong> Lays Caroline da Silva Santos<br>
+          <strong>Grupo:</strong> GRUPO IFSP · <strong>Data:</strong> 22/11/2026
+        </p>
+
+      </header>
+<div class="destaque">
+
+   
+    <figure class="imagem-destaque">
+        <img src="img/fotodesmatamento.jpg" alt="Árvores cortadas em um local de desmatamento"
+            
+            alt="Área de desmatamento">
+
+        <figcaption>
+            Árvores cortadas em um local de desmatamento
+        </figcaption>
+    </figure>
+
+  
+    <section class="curiosidades">
+
+        <h2>Você sabia?</h2>
+
+        <p id="texto-curiosidade">
+            Clique no botão para descobrir uma curiosidade
+            sobre a inteligência artificial e o desmatamento!
+        </p>
+
+        <button type="button" id="botao-curiosidade">
+            Descobrir curiosidade
+        </button>
+
+    </section>
+
+
+</div>
+     <div class="layout-conteudo">
+        
+    <nav class="topicos">
+        <h3>Tópicos</h3>
+
+        <a class="marca" href="#">Grupo</a>
+
+        <ul class="menu">
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#deteccao">Detecção</a></li>
+            <li><a href="#classificacao">Classificação</a></li>
+            <li><a href="#final">Como essa detecção ajuda?</a></li>
+        </ul>
+    </nav>
+
+   
+    <div class="coluna-conteudo">
+
+        <div class="textos">
+
+            <section class="introducao-texto" id="introducao">
+                <h2>Introdução</h2>
+                <p>
+
+O desmatamento é um problema que vêm afetando cada vez mais a biodiversidade de diversas 
+regiões. Recentemente, a implementação da inteligência artifical no monitoramento de áreas 
+desmatadas mostra um avanço significativo de eficácia para evitar que maiores danos sejam
+ feitos, usando dados, imagens de satélites e variáveis ambientais para prever com antecedência
+  os padrões do desmatamento. A Inteligência artificial auxilia na identificação de áreas de 
+  alto risco e permite que as autoridades ambientais ajam rapidamente.
+<br>
+<br>
+No Brasil, iniciativas como as do Instituto Nacional de Pesquisas Espaciais e do Imazon 
+utilizam essas tecnologias para emitir alertas precoces.</p>
+            </section>
+
+            <section class="deteccao-texto" id="deteccao">
+                <h2>Detecção</h2>
+                <p>
+
+Para detectar áreas de desmatamento são necessários dados, algoritmos de aprendizado de 
+máquina e capacidade computacional para processar grandes quantidades de dados.
+<br>
+<br>
+Os algoritmos processam imagens de satélites ópticas, que capturam a radiação e permitem 
+avaliar a saúde da vegetação por índices como o NDVI. No entanto, a presença de nuvens pode 
+limitar esse processo. Para superar isso, utiliza-se também o radar de abertura sintética 
+(SAR), uma tecnologia que funciona noite e dia e atravessa a cobertura de nuvens. A fusão 
+desses dados atinge uma alta taxa de precisão, em alguns casos podendo chegar a 95%.
+<br>
+<br>
+Com esses dados, os modelos de IA são treinados com exemplos de floresta intacta e de áreas 
+desmatadas. Redes Neuronais Convolucionais (CNNs), que são arquiteturas de deep leaning, 
+identificam características visuais e segmentam as áreas desmatadas. A análise permite
+ comparar imagens de um mesmo local ao longo do tempo. Modelos preditivos, como o PrevisIA 
+ do Imazon, cruzam dados de desmatamentos passados com variáveis de risco para prever onde
+  o desmate é mais provável. 
+<br>
+<br>
+Sendo assim, o sistema coleta e pré-processa novas imagens, corrigindo distorções e 
+mascarando nuvens, gerando mapas de alerta ou mapas de risco que passam por camadas de
+ verificação para reduzir falsos positivos. Quando a suspeita é confirmada, o alerta é 
+ emitido a órgãos de fiscalização. Esse processo produz uma economia de tempo de cerca 
+ de 30% no trabalho de especialistas.</p>
+            </section>
+
+            <section class="classificacao-texto" id="classificacao">
+                <h2>Classificação</h2>
+                <p>Criação de um sistema de inteligência artificial onde após a detecção
+                     das áreas desmatadas, a I.A. classificaria a região afetada em 
+                     diversas partes como: Bioma, nível de urgência por exemplo: baixo,
+                      alto ou urgente, o que precisaria ser combatido na região especificada
+                       como incêndio ou garimpo ilegal, quais órgãos públicos que devem ser 
+                       acionados para a área, etc.
+<br>
+<br>
+ Essa classificação automática que a I.A. pode fazer é muito mais rápida do que o
+  processamento de dados manualmente. O monitoramento e o entendimento da necessidade
+   que a região precisa pode ser estendido também para áreas de cultivo, estudos de 
+   biodiversidade e formulação de políticas de uso do solo mais responsáveis. </p>
+            </section>
+
+            <section class="final-texto" id="final">
+                <h2>Como essa detecção ajuda?</h2>
+                <p> Com a utilização da I.A. na identificação de desmatamento, 
+                    esse processo seria muito mais rápido e com muito mais precisão 
+                    ajudando órgão ambientais na ação preventiva contra os problemas enfrentados hoje nos biomas brasileiros.</p>
+            </section>
+
+        </div>
+
+      
+        <div class="recursos">
+
+            <section class="trabalho-video">
+                <h2>Vídeo</h2>
+               
+             <iframe width="560" height="315" src="video/Video.OlharDigital.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>           
+                
+            </section>
+
+            <section class="fontes">
+                <h2>Para saber mais</h2>
+                <ul>
+                    <li><a href="https://jornal.usp.br/radio-usp/o-uso-da-ia-em-sistemas-de-monitoramento-ambiental-pode-auxiliar-na-prevencao-de-desastres-ambientais/" target="_blank" rel="noopener noferrer">O uso da IA em sistemas de monitoramento ambiental pode auxiliar na prevenção de desastres ambientais - Jornal da USP</a></li>
+                    <li><a href="https://meioambientepocos.com.br/anais/Anais2024/Utiliza%C3%A7%C3%A3o%20De%20Intelig%C3%AAncia%20Artificial%20Para%20Monitoramento%20Do%20Desmatamento%20Do%20Cerrado.pdf" target="_blank" rel="noopener noferrer">Utilização de Inteligência Artificial para Monitoramento do desmatamento do Cerrado -  21º Congresso Nacional de Meio Ambiente de Poços de Caldas </a></li>
+                    <li><a href="https://www.inpe.br/cra/projetos_pesquisas/deter.php" target="_blank" rel="noopener noferrer">Projeto DETER-B - Inep</a></li>
+                    <li><a href="https://previsia.org.br/a-metodologia/" target="_blank" rel="noopener noferrer">Sobre a Imazon - PrevisIA</a></li>
+                    <li><a href="https://previsia.org.br/para-lidera-areas-sob-risco-de-desmatamento-na-amazonia-previsto-para-2026-indica-previsia/" otarget="_blank" rel="noopener noferrer">Pará lidera áreas sob risco de desmatamento na Amazônia previsto para 2026 - PrevisIA</a></li>
+                    <li><a href="https://revistaamazonia.com.br/imazon-prevencao-desmate-amazonia/" target="_blank" rel="noopener noferrer">Pará lidera risco de desmatamento na Amazônia em 2026 - PrevisIA</a></li>
+                    <li><a href="https://isprs-annals.copernicus.org/articles/XI-3-2026/507/2026/isprs-annals-XI-3-2026-507-2026.html" target="_blank" rel="noopener noferrer">Detecção em tempo quase real da perda florestal na Amazônia brasileira usando fusão Bayesiana de séries temporais SAR do Sentinel-1 e multiespectrais do Sentinel-2 - Fundação ISPRS</a></li>
+                    <li><a href="https://ieeexplore.ieee.org/abstract/document/11621624#1" target="_blank" rel="noopener noferrer">Estrutura híbrida de aprendizado profundo e aprendizado de máquina para detecção de desmatamento multitemporal usando dados de satélite Sentinel - IEEE</a></li>
+                    <li><a href="https://zenodo.org/records/20352113#1" target="_blank" rel="noopener noferrer">Detecção de desmatamento ilegal e mudanças no uso da terra a partir de imagens de satélite usando U-Net com arquitetura CNN e CNN siamesa - Zenado</a></li>
+                    <li><a href="https://previsia.org.br/como-a-previsia-transforma-dados-em-oportunidades-para-financiar-a-floresta-em-pe/#content" target="_blank" rel="noopener noferrer">Como a PrevisIA transforma dados em oportunidades para financiar a floresta em pé - PrevisIA</a></li>
+                    <li><a href="https://www.sciencedirect.com/science/article/pii/S1569843225004960#1" target="_blank" rel="noopener noferrer">Ferramentas de aprendizagem profunda para apoiar o monitoramento do desmatamento na Costa do Marfim usando imagens de satélite SAR e ópticas - ScienceDirect</a></li>
+                </ul>
+            </section>
+
+        </div>
+
+    </div>
+
+</div>
+</main>
+    
+
+ 
+
+  
+  <footer class="rodape">
+    <p>IFSP-Campus Cubatão · 2026</p>
+    <p><a href="#trabalho">Voltar ao topo</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
